@@ -1,7 +1,12 @@
 ﻿			
-VIVA: Stands for Open Data Protocol, it is a rest based data acccess protocol.
+oData
+##############################
+Stands for Open Data Protocol, it is a rest based data acccess protocol.
 It provides a way to query and manipulating data.
 			
+Packages:
+
+
 
 References: https://www.youtube.com/watch?v=NoXZ4tdD6kc&ab_channel=ITSolsAndServices
 			
@@ -15,3 +20,28 @@ https://www.youtube.com/watch?v=l024p4_3q2c&list=PLan3SCnsISTTvSFkS8d1l49N4evvrg
 https://www.youtube.com/watch?v=1oA6XxmYAA0&ab_channel=HassanHabib
 https://www.youtube.com/watch?v=VFunAvbrZeQ&ab_channel=dotNET
 		
+
+
+https://www.youtube.com/watch?v=KrEVuuuiXfI&list=PLmajIBPiks11NU41T8G149D5hf-o1oBqs&ab_channel=Just2Share
+
+https://www.youtube.com/watch?v=L9HdnNCi0R0&ab_channel=ASP.NETMVC
+
+https://www.youtube.com/watch?v=GUkaPWS4rGs&ab_channel=VCompetencyTech
+
+https://www.youtube.com/watch?v=MlSNcvCIMdw&ab_channel=NaveenBommidiTechSeeker
+
+https://www.youtube.com/watch?v=C-PXkbtNI2Q&ab_channel=AjdenTowfeek
+
+https://www.youtube.com/watch?v=VGnLZ6Fxnx8&ab_channel=HassanHabib
+
+https://www.youtube.com/watch?v=yIedVaXAfd4&ab_channel=DipjyotiSikder
+
+https://www.youtube.com/watch?v=2YXbRxCClcM&ab_channel=AnisurRahman
+
+https://www.youtube.com/watch?v=xsCiXMzAVQ8&ab_channel=ProgramandoIdeas
+
+https://www.youtube.com/watch?v=3MnwLbCJxFo&ab_channel=spjeff
+
+https://www.youtube.com/watch?v=yCe4WGBy59I&ab_channel=TamerAbdelsalam
+
+https://www.youtube.com/watch?v=NoXZ4tdD6kc&ab_channel=ITSolsAndServices
