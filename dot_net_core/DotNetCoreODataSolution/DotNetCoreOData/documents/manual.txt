@@ -1,0 +1,17 @@
+﻿			
+VIVA: Stands for Open Data Protocol, it is a rest based data acccess protocol.
+It provides a way to query and manipulating data.
+			
+
+References: https://www.youtube.com/watch?v=NoXZ4tdD6kc&ab_channel=ITSolsAndServices
+			
+			
+			
+https://github.com/OData/AspNetCoreOData
+https://referbruv.com/blog/working-with-odata-integrating-an-existing-aspnet-core-3x-api/
+https://devblogs.microsoft.com/odata/tutorial-creating-a-service-with-odata-8-0/
+Reference: https://www.youtube.com/watch?v=w0Tj0VIUCtA&ab_channel=HassanHabib
+https://www.youtube.com/watch?v=l024p4_3q2c&list=PLan3SCnsISTTvSFkS8d1l49N4evvrgdQN&ab_channel=HassanHabib
+https://www.youtube.com/watch?v=1oA6XxmYAA0&ab_channel=HassanHabib
+https://www.youtube.com/watch?v=VFunAvbrZeQ&ab_channel=dotNET
+		
