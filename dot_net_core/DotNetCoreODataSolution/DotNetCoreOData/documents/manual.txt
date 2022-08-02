@@ -8,7 +8,45 @@ Packages:
 
 
 
-References: https://www.youtube.com/watch?v=NoXZ4tdD6kc&ab_channel=ITSolsAndServices
+
+
+API End Ponts:
+--to select only title
+?$select=title
+
+--if you want to select multiple columns like below
+?$select=id,title
+
+--filter capabilities for equal
+?$filter=title eq 'Product Title... 2'
+
+--Less than and greater than
+?$filter=price lt 50
+?$filter=price gt 50
+
+***less then and equal to
+?$filter=price le 50
+?$filter=price qe 50
+
+--Start With Capabilities
+$filter=startswith(title,'Product')
+
+--In capabilities
+?$filter=id in (1,2)
+
+--Order  by 
+?$orderby=id desc
+
+--Expand capabilities
+
+
+
+
+
+
+
+
+References: https://www.youtube.com/watch?v=MlSNcvCIMdw&ab_channel=NaveenBommidiTechSeeker
 			
 			
 			
@@ -22,13 +60,10 @@ https://www.youtube.com/watch?v=VFunAvbrZeQ&ab_channel=dotNET
 		
 
 
-https://www.youtube.com/watch?v=KrEVuuuiXfI&list=PLmajIBPiks11NU41T8G149D5hf-o1oBqs&ab_channel=Just2Share
 
-https://www.youtube.com/watch?v=L9HdnNCi0R0&ab_channel=ASP.NETMVC
 
-https://www.youtube.com/watch?v=GUkaPWS4rGs&ab_channel=VCompetencyTech
 
-https://www.youtube.com/watch?v=MlSNcvCIMdw&ab_channel=NaveenBommidiTechSeeker
+
 
 https://www.youtube.com/watch?v=C-PXkbtNI2Q&ab_channel=AjdenTowfeek
 
