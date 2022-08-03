@@ -40,6 +40,8 @@ $filter=startswith(title,'Product')
 --Expand capabilities
 
 
+http://localhost:55854/api/product/GetAllProducts?$select=id,Title,price,qty&expand=sales($select=id,productid)&top=2&count=true&orderby=id desc
+http://localhost:55854/odata/ProductOdata?$select=id,title&$expand=sales($select =id)&$skip=1&$top=3&$orderby=id asc
 
 
 

@@ -17,15 +17,15 @@ namespace DotNetCoreOData.Controllers
         {
             this.productService = productService;
         }
-        [HttpGet]
-        [EnableQuery]
+        [HttpGet]        
+        [EnableQuery(PageSize = 5)]
         public async Task<ActionResult<IQueryable<Product>>> GetAllProducts()
         {
             IQueryable<Product> retrievedProducts = await this.productService.RetrieveAllProducts();
 
             return Ok(retrievedProducts);
         }
-
+        
         [HttpGet]
         [EnableQuery]
         public async Task<ActionResult<IQueryable<Product>>> GetExpands()
@@ -33,7 +33,7 @@ namespace DotNetCoreOData.Controllers
             IQueryable<Product> retrievedProducts = new List<Product>() {
                 new Product
                 {
-                     Id= 1,
+                    Id= 1,
                     Title= "Rice",
                     Qty= 1,
                     Price= 50,
@@ -52,5 +52,6 @@ namespace DotNetCoreOData.Controllers
 
             return Ok(retrievedProducts);
         }
+        
     }
 }

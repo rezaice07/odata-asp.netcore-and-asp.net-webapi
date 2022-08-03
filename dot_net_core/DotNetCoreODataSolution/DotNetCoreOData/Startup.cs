@@ -11,6 +11,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.OData;
+using Microsoft.OData.Edm;
+using Microsoft.OData.ModelBuilder;
 
 namespace DotNetCoreOData
 {
@@ -32,12 +34,17 @@ namespace DotNetCoreOData
             });
 
             services.AddTransient<IProductService, ProductService>();
+
+            //normal routing
+            //services.AddControllers().AddOData(options =>
+            //    options.Select().Filter().OrderBy().Count().Expand().SetMaxTop(3)
+            //);
+
+            //for count and odata edm
             services.AddControllers().AddOData(options =>
                 options.Select().Filter().OrderBy().Count().Expand().SetMaxTop(999999)
+                .AddRouteComponents("odata", GetEdmModel()) //this is the custom routing and also enable counting
             );
-            //.AddNewtonsoftJson(options =>
-            //    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            //);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +63,13 @@ namespace DotNetCoreOData
             {
                 endpoints.MapControllers();
             });
+        }
+
+        public static IEdmModel GetEdmModel()
+        {
+            ODataConventionModelBuilder modelBuilder = new ODataConventionModelBuilder();
+            modelBuilder.EntitySet<Product>("ProductOdata");
+            return modelBuilder.GetEdmModel();
         }
     }
 }
