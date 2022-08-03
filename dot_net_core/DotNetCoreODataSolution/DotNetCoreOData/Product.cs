@@ -10,13 +10,17 @@ namespace DotNetCoreOData
     [Table("Product", Schema = "dbo")]
     public class Product
     {
+        public Product()
+        {
+            this.Sales = new HashSet<Sale>();
+        }
         [Key]
         public int Id { get; set; }
         public string Title { get; set; }
         public int Qty { get; set; }
         public decimal Price { get; set; }
-
-        public virtual List<Sale> Sales { get; set; }
+                
+        public virtual ICollection<Sale> Sales { get; set; }
     }
 
 

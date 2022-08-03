@@ -33,8 +33,11 @@ namespace DotNetCoreOData
 
             services.AddTransient<IProductService, ProductService>();
             services.AddControllers().AddOData(options =>
-                options.Select().Filter().OrderBy().Count().Expand()
+                options.Select().Filter().OrderBy().Count().Expand().SetMaxTop(999999)
             );
+            //.AddNewtonsoftJson(options =>
+            //    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            //);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

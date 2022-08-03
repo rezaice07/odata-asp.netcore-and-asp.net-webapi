@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace DotNetCoreOData
 {
@@ -19,7 +20,9 @@ namespace DotNetCoreOData
         }
         public async Task<IQueryable<Product>> RetrieveAllProducts()
         {
-            return db.Products.AsQueryable();
+            return db.Products
+                .Include(s=>s.Sales)
+                .AsQueryable();
         }
     }
 }

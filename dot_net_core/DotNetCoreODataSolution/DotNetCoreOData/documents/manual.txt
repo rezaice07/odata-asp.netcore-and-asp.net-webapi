@@ -5,10 +5,7 @@ Stands for Open Data Protocol, it is a rest based data acccess protocol.
 It provides a way to query and manipulating data.
 			
 Packages:
-
-
-
-
+ <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.0.10" />
 
 API End Ponts:
 --to select only title
@@ -27,6 +24,9 @@ API End Ponts:
 ***less then and equal to
 ?$filter=price le 50
 ?$filter=price qe 50
+
+**not equal to 
+$filter=title ne 'Rice' &$top=100 &$orderby=id,title  desc
 
 --Start With Capabilities
 $filter=startswith(title,'Product')
